@@ -18,21 +18,16 @@
             </a>
         </div>
         <table class="table table-bordered table-hover table-striped" id="student-table">
-            <thead class="thead-dark">
-            <tr>
-                <th class="">Id</th>
+            <tr class="thead-dark">
+                <th>Id</th>
                 <th>Name</th>
                 <th>Email</th>
                 <th>Status</th>
                 <th>Action</th>
             </tr>
-            </thead>
-            <tbody>
-                
-            </tbody>
         </table>
         <div id="student-dialog" style="border:2px solid green;display:none;" class="mx-auto w-50 p-3 pb-5 bg-dark text-white text-center">
-            <form action="#">
+            <form action="#" id="student-form">
                 <div class="form-group">
                     <label for="firstName">First Name</label>
                     <input type="text" name="firstName" id="firstName" class="form-control" placeholder="Enter first name" required />
@@ -60,48 +55,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <script>
-        function $(key){
-            return document.getElementById(key);
-        }
-        
-        function loadData(){
-            let $table = $("student-table");
-        }
-
-        window.addEventListener('load', function () {
-            //loadData();
-            let i = 1;
-            // Initialize the service 
-            let studentService = new StudentService();
-
-            $("add-btn").onclick = function(){
-                $("student-dialog").style.display="block";
-            };
-
-            $("cancel-btn").onclick = function(){
-                $("student-dialog").style.display="none";
-            }
-
-            $("save-btn").onclick=function(){
-                let student = new Student();
-                student.id = i;
-                student.firstName = $("firstName").value; 
-                student.lastName = $("lastName").value;
-                student.email = $("email").value;
-                student.statue = $("status").checked;
-
-                studentService.add(student);
-                i++;
-                //console.log(studentService.getAll());
-
-                //Invoke another event 
-                $("cancel-btn").click();
-                return false;
-            }
-
-        })
-    </script>
+     <script src="js/site/app.js"></script>
     <script src="js/models/Student.js"></script>
     <script src="js/services/StudentService.js"></script>
 </body>
