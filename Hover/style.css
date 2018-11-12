@@ -1,0 +1,85 @@
+.lang {display: none;}
+.social {display: none;}
+
+.lang:checked ~ .UK {right: 0.2rem;}
+.lang:checked ~ .ES {right: 0.23rem;}
+.lang:checked ~ .FR {right: 0.23rem;}
+.lang:checked ~ .sharing {right: 0.6rem;}
+
+.social:checked ~ .FCBK {right: 0.12rem;}
+.social:checked ~ .TWITTER {right: 0.24rem;}
+.social:checked ~ .GPLUS {right: 0.48rem;}
+.social:checked ~ .MAIL {right: 0.60rem;}
+
+.link_general {
+position: relative;
+-webkit-transition: all 0.4s ease;
+transition: all 0.4s ease;
+}
+.share {
+background-image: url(https://www.tymetro.com.tw/tymetro-new/_images/all/share-icon.png);
+background-repeat:no-repeat;
+width: 2.5rem;
+height: 2.5rem;
+display:inline-block;
+position:relative;
+top:0; right:0; 
+background-size: contain;
+cursor:pointer;
+z-index: 10;
+}
+
+.lang {background-image: url(http://www.aah.co.uk/wcsstore7.00.00.542/CelesioB2BStorefrontAssetStore/images/touch-icon-60px.png);}
+
+.UK, .ES, .FR, .FCBK, .TWITTER, .GPLUS, .MAIL {
+display:block;
+text-indent:-625rem;
+width:2.5rem;
+height:2.5rem;
+background-repeat:no-repeat;
+background-size:contain;
+cursor: pointer;
+padding: 0 0.5rem 0 0;
+}
+
+.FCBK {
+background-image: url(http://bookfairsfiles.scholastic.com/dotcom/social/footer/fb.png);
+}
+
+.TWITTER {
+background-image: url(http://www.kauffman.org/images/Kauffman_org/icon-twitter-blue.png);
+}
+
+.GPLUS {
+background-image: url(http://bookfairsfiles.scholastic.com/dotcom/social/footer/google+.png);
+}
+
+.MAIL {
+background-image: url(http://aealvalade.edu.pt/images/fich/botoes/icon-mail.png);
+}	
+
+
+.UK {background-image: url(http://www.bigcheesebadges.com/images/united_kingdom_great_british_union_jack_flag.png);
+background-color: #F3E4FF;
+border-radius: 2rem;}
+
+.ES {background-image: url(http://www.bigcheesebadges.com/images/spain_spanish_flag.png);background-color: #F3E4FF;
+border-radius: 2rem;}
+
+.FR {background-image: url(http://www.bigcheesebadges.com/images/france_french_flag.png);background-color: #F3E4FF;
+border-radius: 2rem;}
+
+.sharing, .FCBK, .TWITTER, .GPLUS, .MAIL, .ETSY {
+display: inline-block;
+}
+
+.FCBK {right: -2.75rem;}
+.TWITTER {right:-5.5rem;}
+.GPLUS {right:-8.25rem;}
+.MAIL {right:-11rem;}
+.sharing {right: -7rem;}
+
+.UK {right: -2.8rem;}
+.ES {right:-5.5rem;}
+.FR {right:-8.3rem;}
+

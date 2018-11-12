@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    Language:
+
+    <input type="checkbox" id="lang_id" class="lang">
+    <label for="lang_id" class="share lang" onclick="if(document.getElementById('lang_id').value) document.getElementById('social_id').checked = false;"></label>
+
+    <div class="UK link_general" style="display: inline-block; padding:0;" href="">
+    </div>
+    <div class="ES link_general" style="display: inline-block; padding:0;" href="">
+    </div>
+    <div class="FR link_general" style="display: inline-block; padding:0;" href="">
+    </div>
+    <div class="sharing link_general" style="display: inline-block; padding:0;" href="">
+        Share on:
+        <input type="checkbox" id="social_id" class="social">
+        <label for="social_id" class="share" onclick="if(document.getElementById('social_id').value) document.getElementById('lang_id').checked = false;"></label>
+
+        <a class="FCBK link_general" style="display: inline-block; padding:0;" href="" title="Share on Facebook">
+        </a>
+
+        <a class="TWITTER link_general" style="display:inline-block; padding:0;" href="" title="Share on Twitter">
+        </a>
+        <a class="GPLUS link_general" style="display:inline-block; padding:0;" href="">
+        </a>
+
+        <a class="MAIL link_general" style="display:inline-block; padding:0;" href="" title="Send by mail">
+        </a>
+    </div>
+    </div>
+</body>
+
+</html>

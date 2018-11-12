@@ -1,4 +1,4 @@
-// Studnet object
+// Student object
 function Student(){
     this.id = 0;
     this.firstName = "";
